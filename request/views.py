@@ -15,7 +15,7 @@ class CurrencyUsd:
 
     def get(self, amount=None):
         if not amount:
-            return HTTP_400_BAD_REQUEST, SERVICE_UNAVAILABLE
+            return HTTP_400_BAD_REQUEST, BAD_REQUEST
 
         url = 'https://www.banki.ru/products/currency/usd/'
 
